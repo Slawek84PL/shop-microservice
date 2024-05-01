@@ -1,4 +1,4 @@
-package pl.slawek.orderservice;
+package pl.slawek.orderservice.model;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -17,7 +17,7 @@ public class OrderController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public String addOrder(@RequestBody OrderRequest orderRequest) {
+    public String addOrder(@RequestBody OrderRequest orderRequest) throws IllegalAccessException {
         orderService.addOrder(orderRequest);
         return "Order added successfully";
     }

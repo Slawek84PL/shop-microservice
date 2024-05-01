@@ -1,4 +1,4 @@
-package pl.slawek.orderservice;
+package pl.slawek.orderservice.model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

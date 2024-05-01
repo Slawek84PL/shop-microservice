@@ -1,4 +1,4 @@
-package pl.slawek.orderservice;
+package pl.slawek.orderservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
